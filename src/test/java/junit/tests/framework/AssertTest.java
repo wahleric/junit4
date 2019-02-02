@@ -69,6 +69,26 @@ public class AssertTest extends TestCase {
         assertEquals("a", "a");
     }
 
+    public void testAssertCharEquals() {
+        assertEquals('a', 'a');
+    }
+
+    public void testAssertBooleanEquals() {
+        assertEquals(true, true);
+    }
+
+    public void testAssertLongEquals() {
+        assertEquals(403L, 403L);
+    }
+
+    public void testAssertByteEquals() {
+        assertEquals((byte) 123, (byte) 123);
+    }
+
+    public void testAssertShortEquals() {
+        assertEquals((short) 123, (short) 123);
+    }
+
     public void testAssertNullNotEqualsString() {
         try {
             assertEquals(null, "foo");
